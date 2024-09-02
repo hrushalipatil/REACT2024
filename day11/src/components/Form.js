@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-
 export default function Form({ onAddItems }) {
 
   const [description, setDescription] = useState("");
@@ -8,7 +6,6 @@ export default function Form({ onAddItems }) {
 
   // handler code
   function handleSubmit(e) {
-
     e.preventDefault();
 
     if (!description) return;
@@ -23,7 +20,7 @@ export default function Form({ onAddItems }) {
 
   return (
     <form className="add-form" onSubmit={handleSubmit}>
-      <h3>What do you need for your trip?</h3>
+      <h3>What do you need for your 😍 trip?</h3>
       <select
         value={quantity}
         onChange={(e) => setQuantity(Number(e.target.value))}
@@ -40,7 +37,7 @@ export default function Form({ onAddItems }) {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <button>ADD</button>
+      <button>Add</button>
     </form>
   );
 }
