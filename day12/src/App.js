@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react';
 // Dependency Array ([]): The empty array at the end means this effect will run only once after the first render (when the component mounts).
 
 function App() {
+  
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
